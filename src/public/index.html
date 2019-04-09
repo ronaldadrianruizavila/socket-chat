@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hola</title>
+</head>
+
+<body>
+    <div class="row bg-dark h-100 justify-content-center align-items-center">
+        <div class="col-9 d-flex justify-content-center">
+            <div class="card" style="max-width: 380px">
+                <div class="card-header text-light bg-primary text-center">
+                    <h5>LOGIN</h5>
+                </div>
+                <div class="card-body">
+                    <form class="p-4" id="form" onsubmit="return false" action="chat.html" >
+                        <div class="form-group">
+                            <label for="user">Usuario</label>
+                            <input id="user" name="user" type="text" placeholder="Username"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="sala">Sala</label>
+                            <select id="sala" name="sala" type="text" placeholder="Sala"
+                                class="custom-select">
+                                    <option id="1">Juegos</option>
+                                    <option id="2">Politica</option>
+                                    <option id="3">Peliculas</option>
+                                    <option id="4">Deporte</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button id="btn" class="btn btn-primary btn-block">Iniciar sesion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
