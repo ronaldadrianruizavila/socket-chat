@@ -1,7 +1,7 @@
 const socket = io();
 
 let params = new URLSearchParams(window.location.search);
-
+let salaElement = document.getElementById('sala');
 if (!params.has('user') && !params.has('sala')) {
     window.location = 'index.html';
     throw new Error('El nombre es necesario');
@@ -9,6 +9,8 @@ if (!params.has('user') && !params.has('sala')) {
 
 let user = params.get('user');
 let sala = params.get('sala');
+
+salaElement.innerHTML = sala;
 
 socket.on('connect', () => {
     console.log('%cConectado ', 'color:green;font-size:20px')
